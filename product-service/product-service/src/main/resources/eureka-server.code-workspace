@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../eureka-server"
+		},
+		{
+			"path": "../../../.."
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "interactive"
+	}
+}
