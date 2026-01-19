@@ -1,0 +1,7 @@
+{
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "terminal.integrated.fontFamily": "console",
+    "terminal.integrated.wordWrap": "off",
+    "editor.wordWrap": "off",
+    "debug.console.wordWrap": false
+}
