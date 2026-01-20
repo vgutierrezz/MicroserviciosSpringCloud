@@ -3,5 +3,8 @@
     "terminal.integrated.fontFamily": "console",
     "terminal.integrated.wordWrap": "off",
     "editor.wordWrap": "off",
-    "debug.console.wordWrap": false
+    "debug.console.wordWrap": false,
+    "java.project.sourcePaths": [
+        "checkout-service/src/main/java"
+    ]
 }
