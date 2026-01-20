@@ -11,7 +11,7 @@ import org.springframework.cloud.loadbalancer.core.RandomLoadBalancer;
 
 
 // Configuración personalizada del balanceador de carga para usar el algoritmo aleatorio
-@Configuration
+//@Configuration
 public class LoadBalancerConfiguration {
     @Bean
     ReactorLoadBalancer<ServiceInstance> randomLoadBalancer(Environment environment, LoadBalancerClientFactory loadBalancerClientFactory) {

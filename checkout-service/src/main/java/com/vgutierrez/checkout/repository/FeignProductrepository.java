@@ -10,7 +10,6 @@ import com.vgutierrez.checkout.configuration.LoadBalancerConfiguration;
 import com.vgutierrez.checkout.model.dto.Product;
 
 @FeignClient(name = "product-service")
-@LoadBalancerClient(name = "product-service", configuration = LoadBalancerConfiguration.class)
 public interface FeignProductrepository {
 
     @RequestMapping(method = RequestMethod.GET, value = "/products")
