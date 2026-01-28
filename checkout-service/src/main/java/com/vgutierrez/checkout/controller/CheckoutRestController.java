@@ -2,6 +2,7 @@ package com.vgutierrez.checkout.controller;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,7 +22,11 @@ public class CheckoutRestController {
     }
 
     @GetMapping()
-    public Checkout getCheckout(@RequestParam List<String> productIds) {
+    public Checkout getCheckout(@RequestParam List<String> productIds, @RequestHeader("X-Request-from") String requestFrom) {
+        System.out.println("Enviado desde: " + requestFrom);
+        if(!requestFrom.equals("gateway")){
+            return null;
+        }
         return checkoutService.buildCheckout(productIds);
     }
 }

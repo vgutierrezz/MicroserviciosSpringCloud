@@ -5,6 +5,9 @@
     "editor.wordWrap": "off",
     "debug.console.wordWrap": false,
     "java.project.sourcePaths": [
-        "checkout-service/src/main/java"
+        "gateway/src/main/java/com/vgutierrez/gateway",
+        "gateway/src",
+        "checkout-service/src/main/java",
+        "gateway"
     ]
 }
