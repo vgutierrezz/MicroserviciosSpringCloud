@@ -17,8 +17,8 @@ Módulo | Tecnología / Patrón | Estado |
 | :--- | :--- | :--- |
 | **Infraestructura** | CoreEureka Server & Config Server | ✅ Completado |
 | **Comunicación** | Feign & Load Balancer | ✅ Completado |
-| **Gateway** | Spring Cloud Gateway | 🔄 En Progreso |
-| **Resiliencia** | Patrón Circuit Breaker (Resilience4j) | 📅 Próximamente |
+| **Gateway** | Spring Cloud Gateway | ✅ Completado |
+| **Resiliencia** | Patrón Circuit Breaker (Resilience4j) | 🔄 En Progreso |
 | **Mensajería** | Comunicación Asíncrona con RabbitMQ | 📅 Próximamente |
 | **Observabilidad** | Traceo Distribuido & Log Aggregation (ELK) | 📅 Próximamente |
 
