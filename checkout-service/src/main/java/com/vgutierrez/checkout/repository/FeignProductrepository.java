@@ -13,6 +13,5 @@ import com.vgutierrez.checkout.model.dto.Product;
 public interface FeignProductrepository {
 
     @RequestMapping(method = RequestMethod.GET, value = "/products")
-
-    Product getProductById(@RequestParam String id);
+    Product getProductById(@RequestParam String id, @RequestParam Boolean throwError);
 }

@@ -13,8 +13,10 @@ public class SecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests(authorize ->
-                        authorize.requestMatchers("/checkout/{id}").hasAuthority("SCOPE_email") //Token para consumir el endpoint
-                        .anyRequest().authenticated()
+                        authorize
+                                .requestMatchers("/actuator/**").permitAll()
+                                .requestMatchers("/checkout/**").hasAuthority("SCOPE_email") //Token para consumir el endpoint
+                                .anyRequest().authenticated()
                 )
                 .oauth2ResourceServer(oauth2 -> oauth2
                         .jwt(jwt -> jwt

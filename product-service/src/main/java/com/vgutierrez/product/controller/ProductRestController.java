@@ -12,7 +12,10 @@ import com.vgutierrez.product.model.Product;
 public class ProductRestController {
 
     @GetMapping()
-    public Product getProduct(@RequestParam String id) {
+    public Product getProduct(@RequestParam String id, @RequestParam(defaultValue = "false") Boolean throwError) {
+        if(throwError) {
+            throw new RuntimeException("Error");
+        }
         return new Product(id, "Sample Product", 99.99, "Instance 2");
     }
 }

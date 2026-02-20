@@ -13,6 +13,10 @@ public class Product {
         this.instance = instance;
     }
 
+    public Product() {
+
+    }
+
     public String getId() {
         return id;
     }
